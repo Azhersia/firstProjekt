@@ -1,0 +1,17 @@
+{
+  "name": "2.3server3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "filesystem": "^1.0.1",
+    "path": "^0.12.7"
+  }
+}

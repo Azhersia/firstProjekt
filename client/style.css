@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+input {
+  height: 30px;
+  padding: 2px;
+  border: solid 1px black;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: 0;
+}
