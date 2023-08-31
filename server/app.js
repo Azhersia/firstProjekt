@@ -2,6 +2,7 @@ const express = require("express")
 const path = require("path")
 const server = express()
 const fs = require("fs")
+const { log } = require("console")
 
 server.use(express.static(path.resolve("../client")))
 server.use(express.json())
@@ -14,6 +15,8 @@ function saveUser(user) {
   users.push(user)
   fs.writeFileSync(userPath, JSON.stringify(users, null, 2))
 }
+
+console.log("pls")
 
 function getUsers() {
   const data = fs.readFileSync(userPath, "utf8")
