@@ -4,22 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
-  <title>Node.js Express Server</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Landing</title>
 </head>
 
 <body>
-  <h1>Welcome to forms</h1>
-  <a href="/signup">
-    <button>signup</button>
-  </a>
-  <a href="/login">
-    <button>login</button>
-  </a>
+  <div id="info">
+    <h1>Welcome</h1>
+    <div id="login">
+      <a href="/login">
+        <button>Login</button>
+      </a>
 
+    </div>
+    <div id="signup">
+      <p>Dont have an account?</p>
+      <a href="/signup">
+        <p>Sing up!</p>
+      </a>
+    </div>
+  </div>
   <script src="app.js"></script>
 </body>
 

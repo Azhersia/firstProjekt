@@ -12,8 +12,7 @@ const userPath = path.resolve("users.json")
 function saveUser(user) {
   const users = getUsers()
   users.push(user)
-  console.log(users)
-  fs.writeFileSync(userPath, JSON.stringify(users))
+  fs.writeFileSync(userPath, JSON.stringify(users, null, 2))
 }
 
 function getUsers() {
