@@ -1,8 +1,7 @@
-const express = require("express") // express is express server
-const path = require("path") // configures path
-const server = express() // express is server
-const fs = require("fs") // intialises filescanthigny
-const { log } = require("console")
+const express = require("express")
+const path = require("path")
+const server = express()
+const fs = require("fs")
 
 server.use(express.static(path.resolve("../client")))
 server.use(express.json())
@@ -15,7 +14,6 @@ function saveUser(user) {
   users.push(user)
   fs.writeFileSync(userPath, JSON.stringify(users, null, 2))
 }
-
 
 function getUsers() {
   const data = fs.readFileSync(userPath, "utf8")
